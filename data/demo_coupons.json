@@ -1,0 +1,200 @@
+[
+  {
+    "store": "Amazon India",
+    "code": "DEMO-AMAZON-10",
+    "title": "Portfolio demo electronics offer",
+    "discount": "Up to 10% off electronics",
+    "category": "Electronics",
+    "url": "https://www.amazon.in/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Amazon offer before production."
+  },
+  {
+    "store": "Flipkart",
+    "code": "DEMO-FLIPKART-15",
+    "title": "Portfolio demo fashion offer",
+    "discount": "Up to 15% off fashion",
+    "category": "Fashion",
+    "url": "https://www.flipkart.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Flipkart offer before production."
+  },
+  {
+    "store": "Nykaa",
+    "code": "DEMO-NYKAA-20",
+    "title": "Portfolio demo beauty offer",
+    "discount": "Up to 20% off beauty products",
+    "category": "Beauty",
+    "url": "https://www.nykaa.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Nykaa offer before production."
+  },
+  {
+    "store": "Myntra",
+    "code": "DEMO-MYNTRA-25",
+    "title": "Portfolio demo apparel offer",
+    "discount": "Up to 25% off apparel",
+    "category": "Fashion",
+    "url": "https://www.myntra.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Myntra offer before production."
+  },
+  {
+    "store": "AJIO",
+    "code": "DEMO-AJIO-20",
+    "title": "Portfolio demo lifestyle offer",
+    "discount": "Up to 20% off lifestyle products",
+    "category": "Fashion",
+    "url": "https://www.ajio.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified AJIO offer before production."
+  },
+  {
+    "store": "Meesho",
+    "code": "DEMO-MEESHO-10",
+    "title": "Portfolio demo home and lifestyle offer",
+    "discount": "Up to 10% off selected products",
+    "category": "Shopping",
+    "url": "https://www.meesho.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Meesho offer before production."
+  },
+  {
+    "store": "Tata CLiQ",
+    "code": "DEMO-TATACLIQ-15",
+    "title": "Portfolio demo premium shopping offer",
+    "discount": "Up to 15% off selected products",
+    "category": "Shopping",
+    "url": "https://www.tatacliq.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Tata CLiQ offer before production."
+  },
+  {
+    "store": "Croma",
+    "code": "DEMO-CROMA-10",
+    "title": "Portfolio demo home electronics offer",
+    "discount": "Up to 10% off electronics",
+    "category": "Electronics",
+    "url": "https://www.croma.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Croma offer before production."
+  },
+  {
+    "store": "Reliance Digital",
+    "code": "DEMO-RELIANCE-10",
+    "title": "Portfolio demo technology offer",
+    "discount": "Up to 10% off technology",
+    "category": "Electronics",
+    "url": "https://www.reliancedigital.in/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Reliance Digital offer before production."
+  },
+  {
+    "store": "Purplle",
+    "code": "DEMO-PURPLLE-15",
+    "title": "Portfolio demo personal care offer",
+    "discount": "Up to 15% off personal care",
+    "category": "Beauty",
+    "url": "https://www.purplle.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Purplle offer before production."
+  },
+  {
+    "store": "BigBasket",
+    "code": "DEMO-BIGBASKET-10",
+    "title": "Portfolio demo grocery offer",
+    "discount": "Up to 10% off groceries",
+    "category": "Grocery",
+    "url": "https://www.bigbasket.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified BigBasket offer before production."
+  },
+  {
+    "store": "Blinkit",
+    "code": "DEMO-BLINKIT-10",
+    "title": "Portfolio demo quick-commerce offer",
+    "discount": "Up to 10% off selected items",
+    "category": "Grocery",
+    "url": "https://blinkit.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Blinkit offer before production."
+  },
+  {
+    "store": "Zepto",
+    "code": "DEMO-ZEPTO-10",
+    "title": "Portfolio demo grocery delivery offer",
+    "discount": "Up to 10% off selected items",
+    "category": "Grocery",
+    "url": "https://www.zeptonow.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Zepto offer before production."
+  },
+  {
+    "store": "JioMart",
+    "code": "DEMO-JIOMART-15",
+    "title": "Portfolio demo everyday essentials offer",
+    "discount": "Up to 15% off selected products",
+    "category": "Grocery",
+    "url": "https://www.jiomart.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified JioMart offer before production."
+  },
+  {
+    "store": "Swiggy",
+    "code": "DEMO-SWIGGY-100",
+    "title": "Portfolio demo food delivery offer",
+    "discount": "Demo food delivery savings",
+    "category": "Food Delivery",
+    "url": "https://www.swiggy.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Swiggy offer before production."
+  },
+  {
+    "store": "Zomato",
+    "code": "DEMO-ZOMATO-100",
+    "title": "Portfolio demo restaurant offer",
+    "discount": "Demo restaurant delivery savings",
+    "category": "Food Delivery",
+    "url": "https://www.zomato.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Zomato offer before production."
+  },
+  {
+    "store": "MakeMyTrip",
+    "code": "DEMO-MMT-500",
+    "title": "Portfolio demo hotel booking offer",
+    "discount": "Demo travel booking savings",
+    "category": "Travel",
+    "url": "https://www.makemytrip.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified MakeMyTrip offer before production."
+  },
+  {
+    "store": "Goibibo",
+    "code": "DEMO-GOIBIBO-500",
+    "title": "Portfolio demo flight and hotel offer",
+    "discount": "Demo travel booking savings",
+    "category": "Travel",
+    "url": "https://www.goibibo.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Goibibo offer before production."
+  },
+  {
+    "store": "Cleartrip",
+    "code": "DEMO-CLEARTRIP-500",
+    "title": "Portfolio demo flight booking offer",
+    "discount": "Demo flight booking savings",
+    "category": "Travel",
+    "url": "https://www.cleartrip.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Cleartrip offer before production."
+  },
+  {
+    "store": "BookMyShow",
+    "code": "DEMO-BMS-100",
+    "title": "Portfolio demo movie ticket offer",
+    "discount": "Demo entertainment savings",
+    "category": "Entertainment",
+    "url": "https://in.bookmyshow.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified BookMyShow offer before production."
+  },
+  {
+    "store": "Uber",
+    "code": "DEMO-UBER-100",
+    "title": "Portfolio demo ride offer",
+    "discount": "Demo ride savings",
+    "category": "Mobility",
+    "url": "https://www.uber.com/in/en/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Uber offer before production."
+  },
+  {
+    "store": "Ola",
+    "code": "DEMO-OLA-100",
+    "title": "Portfolio demo cab ride offer",
+    "discount": "Demo ride savings",
+    "category": "Mobility",
+    "url": "https://www.olacabs.com/",
+    "description": "Demo record for the GitHub showcase. Replace with a verified Ola offer before production."
+  }
+]
