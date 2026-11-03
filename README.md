@@ -1,6 +1,20 @@
 # Telegram Coupon Bot
 
-A practical Telegram bot for discovering and sharing active sale offers and coupon codes directly in chat.
+<p align="center">
+  A portfolio-ready Telegram bot for discovering and sharing sale offers and coupon codes directly in chat.
+</p>
+
+<p align="center">
+  <a href="https://github.com/AkashMagare/Telegram-Coupon-Bot/actions/workflows/ci.yml"><img src="https://github.com/AkashMagare/Telegram-Coupon-Bot/actions/workflows/ci.yml/badge.svg" alt="CI status"></a>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10 or newer">
+  <img src="https://img.shields.io/badge/Telegram-Bot%20API-26A5E4?logo=telegram&logoColor=white" alt="Telegram Bot API">
+  <img src="https://img.shields.io/badge/Storage-SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+</p>
+
+<p align="center">
+  <b>Search deals. Share codes. Save more.</b>
+</p>
 
 ## Features
 
@@ -17,6 +31,8 @@ A practical Telegram bot for discovering and sharing active sale offers and coup
 - Basic view/use counters for understanding which offers are useful
 - Per-user request throttling to avoid accidental command floods
 - Portfolio demo catalogue covering major Indian shopping and service platforms
+- Automated tests and GitHub Actions CI
+- Docker-ready deployment with a persistent SQLite volume
 
 ## Commands
 
@@ -49,6 +65,17 @@ The repository includes demo entries for:
 
 The demo codes intentionally use a `DEMO-` prefix. They demonstrate the complete bot flow for a GitHub portfolio and are not guaranteed live offers. Verify a code before publishing it to real users.
 
+## Example user flow
+
+```text
+User:   /search nykaa
+Bot:    🔎 Search results for: nykaa
+        Portfolio demo beauty offer — Nykaa
+        💸 Up to 20% off beauty products · code DEMO-NYKAA-20
+
+User:   taps the offer → views details → opens the store link
+```
+
 ## How coupons are stored
 
 Coupons are stored locally in SQLite. The database is created automatically at the path configured by `DATABASE_PATH`.
@@ -69,8 +96,8 @@ The current project uses admin-managed data rather than scraping or depending on
 ### 1. Install
 
 ```bash
-git clone https://github.com/AkashMagare/telegram-coupon-bot.git
-cd telegram-coupon-bot
+git clone https://github.com/AkashMagare/Telegram-Coupon-Bot.git
+cd Telegram-Coupon-Bot
 
 python -m venv .venv
 # Windows PowerShell:
@@ -112,6 +139,18 @@ The first start creates `coupons.db` automatically. Keep `.env` and the database
 
 The seed script is safe to run more than once: existing store/code pairs are skipped. To use another database, pass `--database path/to/coupons.db`.
 
+### Docker
+
+```bash
+docker build -t telegram-coupon-bot .
+docker run --rm \
+  --env-file .env \
+  -v telegram-coupon-data:/data \
+  telegram-coupon-bot
+```
+
+The container stores the SQLite database in `/data/coupons.db`. Keep the volume so coupons survive container restarts.
+
 ## Adding coupons
 
 An admin can send this pipe-separated command in Telegram:
@@ -136,10 +175,21 @@ The database tests use only Python's standard library and do not need a Telegram
 python -m unittest discover -s tests -v
 ```
 
+GitHub Actions runs compilation and the test suite on Python 3.10 through 3.13 for every push and pull request.
+
+## What this project demonstrates
+
+- Secure environment-based API configuration
+- Async Telegram command and callback handling
+- Input validation and admin authorization
+- Indexed SQLite persistence with FTS5 search and expiry cleanup
+- A maintainable separation between bot handlers, configuration, and storage
+
 ## Project structure
 
 ```text
-telegram-coupon-bot/
+Telegram-Coupon-Bot/
+├── .github/workflows/ci.yml
 ├── coupon_bot/
 │   ├── bot.py          # Telegram handlers, pagination, and admin commands
 │   ├── config.py       # Validated environment configuration
@@ -149,8 +199,12 @@ telegram-coupon-bot/
 ├── scripts/
 │   └── seed_demo_data.py
 ├── tests/
-│   └── test_database.py
+│   ├── test_database.py
+│   └── test_seed_demo_data.py
 ├── .env.example
+├── CONTRIBUTING.md
+├── Dockerfile
+├── LICENSE
 ├── main.py
 ├── requirements.txt
 └── README.md
@@ -158,8 +212,7 @@ telegram-coupon-bot/
 
 ## Possible next steps
 
-- Add coupon-provider adapters or a scheduled import from a trusted feed
+- Add verified coupon-provider adapters or scheduled imports from trusted feeds
 - Add opt-in notifications for newly added offers
 - Add CSV import/export for larger coupon catalogues
 - Add per-store usage analytics and a small admin dashboard
-- Deploy with a process manager or a small Docker image
